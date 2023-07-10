@@ -11,25 +11,22 @@ Esse comando vai analisar o arquivo `package-lock.json` do seu projeto para iden
 
 Se o problema estiver em um pacote específico, basta atualizá-lo isoladamente com o comando:
 
-```
-bashsail npm update <nome-do-pacote>
-
+```bash
+sail npm update <nome-do-pacote>
 ```
 
 Caso tenha muitos problemas para serem resolvidos, você pode utilizar o comando:
 
-```
-bashsail npm audit fix  # (ou sem sail fora do docker)
-
+```bash
+sail npm audit fix  # (ou sem sail fora do docker)
 ```
 
 Esse comando tenta corrigir suas vulnerabilidades automaticamente.
 
 Caso a vulnerabilidade aponte para a própria versão desatualizada do npm, basta realizar um upgrade com o seguinte comando:
 
-```
-bashsail npm install -g npm@9.8.0  # (ou sem sail fora do docker)
-
+```bash
+sail npm install -g npm@9.8.0  # (ou sem sail fora do docker)
 ```
 
 Onde `9.8.0` é a versão sugerida pelo comando `sail npm audit`.
