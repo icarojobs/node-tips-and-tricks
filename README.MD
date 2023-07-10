@@ -2,9 +2,8 @@
 
 Para verificar vulnerabilidades nas suas dependências do npm, basta utilizar o seguinte comando:
 
-```
-bashsail npm audit  # (ou sem sail fora do docker)
-
+```bash
+sail npm audit  # (ou sem sail fora do docker)
 ```
 
 Esse comando vai analisar o arquivo `package-lock.json` do seu projeto para identificar problemas de segurança conhecidos (ou populares).
